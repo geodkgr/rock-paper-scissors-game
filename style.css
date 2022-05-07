@@ -1,0 +1,46 @@
+body {
+    background-color: #f6f6f6;
+}
+
+#header {
+    font-size: 2.3rem;
+    font-family: sans-serif;
+}
+
+img {
+    width: 20vw;
+    padding-left: 5.5vw;
+}
+
+.wholeSite {
+    display: grid;
+    justify-content: center;
+}
+
+button {
+    font-size: 3rem;
+    padding: 15px;
+}
+
+.playerOne {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 4rem;
+}
+
+span {
+    padding-left: 20px;
+    font-size: 2.5rem;
+}
+
+.playerTwo {
+    position: absolute;
+    top: 20%;
+    right: 17%;
+    font-size: 4rem;
+}
+
+.endGame {
+    display: none;
+}
