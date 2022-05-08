@@ -13,9 +13,9 @@ const EMOJIS = [
     }
 ]
 
-const SITE = document.getElementsByClassName("wholeSite");
-const pOne = document.getElementsByClassName(".playerOne");
-const pTwo = document.getElementsByClassName(".playerTwo");
+var SITE = document.querySelector(".wholeSite");
+var pOne = document.querySelector(".playerOne");
+var pTwo = document.querySelector(".playerTwo");
 
 let x = 0
 let i = 0
@@ -35,6 +35,7 @@ function rock() {
     } else if (EMOJIS[0].name === EMOJIS[r].name) {
         alert("Tie")
     }
+    return isWinner();
 };
 
 function paper() {
@@ -48,6 +49,7 @@ function paper() {
     } else if (EMOJIS[1].name === EMOJIS[r].name) {
         alert("Tie")
     }
+    return isWinner();
 };
 
 function scissors() {
@@ -61,4 +63,28 @@ function scissors() {
     } else if (EMOJIS[2].name === EMOJIS[r].name) {
         alert("Tie")
     }
+    return isWinner();
 }
+
+function isWinner() {
+    if (i === 10) {
+        alert("Computer won !!!!!");
+        setTimeout(() => {
+           location.reload() 
+        }, 1000);
+        
+    } else if (x === 10) {
+        alert("You won !!!!!!!!!!!!!!!!!!");
+        setTimeout(() => {
+            location.reload();
+        }, 1000);
+        
+    }
+}
+
+
+// if (i === 10) {
+//    alert("Computer won !!!!!");
+// } else if (x === 10) {
+//    alert("You won !!!!!!!!!!!!!!!!!!");
+// }
